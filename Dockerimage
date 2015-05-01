@@ -9,6 +9,6 @@ RUN rm -rf /etc/nginx/sites-enabled/default
 
 EXPOSE 80 443
 
-COPY conf/mysite.com /etc/nginx/sites-enabled/mysite.com
+COPY conf/rfc.abstractfactory.io /etc/nginx/sites-enabled/rfc.abstractfactory.io
 
 CMD ["nginx", "-g", "daemon off;"]
