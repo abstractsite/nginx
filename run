@@ -1,1 +1,1 @@
-docker run --rm -p 80:80 -p 443:443 --link rfc:rfc --name nginx nginx
+docker run --rm -p 80:80 -p 443:443 --link rfc:rfc --link af:af --name nginx nginx
