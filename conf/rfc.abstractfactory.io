@@ -1,5 +1,5 @@
 upstream af {
-    server af:80;
+    server af:8000;
 }
 
 upstream rfc {
