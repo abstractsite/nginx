@@ -6,6 +6,10 @@ server {
         proxy_pass http://rfc:4000;
     }
 
+    location /rfc {
+        proxy_pass http://rfc:4000;
+    }
+
     # proxy_pass http://rfc;
     # rewrite ^ $scheme://pyblish.com/abc$request_uri permanent;
 }
