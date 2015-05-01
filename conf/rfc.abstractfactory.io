@@ -1,15 +1,25 @@
-# rfc.pyblish.com/rfc
-server {
-  listen 80;
-  server_name rfc.pyblish.com;
-  rewrite ^ $scheme://rfc.pyblish.com/rfc$request_uri permanent;
+upstream af {
+    server af:80;
 }
 
-# rfc.pyblish.com
+upstream rfc {
+    server rfc:80;
+}
+
 server {
-  listen 80;
-  server_name rfc.pyblish.com;
-  location / { 
-    proxy_pass http://rfc:4000;
-  }
+    listen 80 default;
+    server_name rfc.pyblish.com;
+
+    location / {
+        proxy_pass http://rfc;
+    }
+}
+
+server {
+    listen 80;
+    server_name af.pyblish.com;
+
+    location / {
+        proxy_pass http://af;
+    }
 }
