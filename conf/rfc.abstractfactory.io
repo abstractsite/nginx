@@ -3,7 +3,7 @@ upstream af {
 }
 
 upstream rfc {
-    server rfc:80;
+    server rfc:4000;
 }
 
 server {
