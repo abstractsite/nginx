@@ -4,8 +4,10 @@ server {
 
     location / {
         proxy_pass http://rfc/rfc$request_uri;
-        proxy_set_header Host abstractfactory.io;
     }
+
+    # proxy_pass http://rfc;
+    # rewrite ^ $scheme://pyblish.com/abc$request_uri permanent;
 }
 
 upstream rfc {
