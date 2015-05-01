@@ -2,7 +2,7 @@ server {
     listen 80 default_server;
     server_name rfc.abstractfactory.io;
 
-    location /rfc {
+    location /rfc/ {
         proxy_pass http://rfc;
     }
 
