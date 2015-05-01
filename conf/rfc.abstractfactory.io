@@ -1,7 +1,7 @@
 # rfc.pyblish.com/rfc
 server {
   listen 80;
-  server_name rfc.abstractfactory.io;
+  server_name rfc.pyblish.com;
   rewrite ^ $scheme://rfc.pyblish.com/rfc$request_uri permanent;
 }
 
