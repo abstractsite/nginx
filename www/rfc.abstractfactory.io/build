@@ -1,1 +1,1 @@
-docker build -t rfc
+docker build -t rfc .
