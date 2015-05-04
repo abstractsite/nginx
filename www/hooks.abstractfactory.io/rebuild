@@ -1,0 +1,1 @@
+docker kill hooks && docker rm hooks && ./build && ./run
