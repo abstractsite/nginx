@@ -6,5 +6,5 @@ server {
         proxy_pass http://af:8000;
     }
 
-	rewrite ^/(blog)(.*) http://blog.pyblish.com$2 permanent;
+	rewrite ^/(blog)(.*) http://blog.abstractfactory.io$2 permanent;
 }
