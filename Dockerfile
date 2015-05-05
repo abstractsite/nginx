@@ -13,5 +13,6 @@ COPY conf/abstractfactory.io /etc/nginx/sites-enabled/
 COPY conf/rfc.abstractfactory.io /etc/nginx/sites-enabled/
 COPY conf/hooks.abstractfactory.io /etc/nginx/sites-enabled/
 COPY conf/blog.abstractfactory.io /etc/nginx/sites-enabled/
+COPY conf/pyblish.com /etc/nginx/sites-enabled/
 
 CMD ["nginx", "-g", "daemon off;"]
