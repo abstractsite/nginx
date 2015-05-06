@@ -11,7 +11,7 @@ RUN apt-get clean
 EXPOSE 80
 
 # Get site
-RUN echo $(date) && git clone https://github.com/pyblish/pyblish.com.git app
+RUN git clone https://github.com/pyblish/pyblish.com.git app
 
 WORKDIR /app
 

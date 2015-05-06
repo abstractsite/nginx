@@ -11,7 +11,7 @@ RUN apt-get clean
 EXPOSE 8000
 
 # Get site
-RUN echo $(date) && git clone https://github.com/abstractsite/abstractfactory.io.git
+RUN git clone https://github.com/abstractsite/abstractfactory.io.git
 
 WORKDIR /abstractfactory.io
 

@@ -1,0 +1,1 @@
+docker kill af && docker rm af && ./build && ./run
