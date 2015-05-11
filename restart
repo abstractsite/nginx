@@ -1,1 +1,1 @@
-git pull && ./build && ./run
+git pull && ./build && ./run && apps/logspout/run

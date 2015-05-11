@@ -1,7 +1,9 @@
-docker run --rm -p 80:80 -p 443:443 \
-	--link af:af \
- 	--link rfc:rfc \
-	--link blog:blog \
-	--link pyblish.com:pyblish.com \
-	--link hooks:hooks \
-    --name nginx nginx
+docker run -p=80:80 -p=443:443 \
+	--rm \
+	--link=af:af \
+ 	--link=rfc:rfc \
+	--link=blog:blog \
+	--link=pyblish.com:pyblish.com \
+	--link=hooks:hooks \
+    --name=nginx \
+    nginx
