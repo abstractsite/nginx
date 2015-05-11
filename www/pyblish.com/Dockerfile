@@ -10,9 +10,6 @@ RUN apt-get clean
 
 EXPOSE 80
 
-# Get site
-RUN git clone https://github.com/pyblish/pyblish.com.git app
-
 WORKDIR /app
 
 RUN pip install -r requirements.txt

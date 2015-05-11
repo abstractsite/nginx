@@ -1,3 +1,1 @@
-pushd $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-docker run -dP --name pyblish.com pyblish.com
-popd
+docker run -dP -v /mnt/hgfs/abstractsite/pyblish.com:/app --name pyblish.com pyblish.com

@@ -1,0 +1,8 @@
+docker run -p 4567:80 \
+           -v $(pwd)/root.git:/root.git \
+	   --name gollum \
+	   --rm mottosso/gollum \
+		--js \
+		--css \
+		--h1-title \
+		/root.git

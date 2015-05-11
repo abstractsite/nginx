@@ -1,1 +1,1 @@
-docker build -t af .
+docker build -t mottosso/gollum .
