@@ -1,0 +1,1 @@
+docker kill be.abstractfactory.io && docker rm be.abstractfactory.io && ./build && ./run

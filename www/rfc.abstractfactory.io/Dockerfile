@@ -20,7 +20,7 @@ RUN gem install \
   rouge
 
 # Get site (uniquelify command to bypass Docker caching)
-RUN echo $(date) && git clone https://github.com/abstractsite/rfc.git
+RUN echo && git clone https://github.com/abstractsite/rfc.git
 
 EXPOSE 4000
 
