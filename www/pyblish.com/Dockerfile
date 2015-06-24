@@ -9,9 +9,9 @@ RUN apt-get install -y python python-dev python-distribute python-pip
 RUN apt-get clean
 
 EXPOSE 80
-
 WORKDIR /app
 
+RUN git clone https://github.com/pyblish/pyblish.com.git /app
 RUN pip install -r requirements.txt
 
 CMD gunicorn app.app:app --log-file - --bind 0.0.0.0:80

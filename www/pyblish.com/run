@@ -1,1 +1,1 @@
-docker run -dP -v /mnt/hgfs/abstractsite/pyblish.com:/app --name pyblish.com pyblish.com
+docker run -dP --name pyblish.com pyblish.com
