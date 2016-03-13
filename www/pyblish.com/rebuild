@@ -1,1 +1,1 @@
-docker kill pyblish.com && docker rm pyblish.com && ./build && ./run
+docker kill pyblish.com && docker rm pyblish.com && docker rmi pyblish.com && ./build && ./run
